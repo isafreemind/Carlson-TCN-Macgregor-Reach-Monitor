@@ -4,6 +4,10 @@ Compare reach. Verify the data.
 
 Tableau comparant les publications originales de **@TuckerCarlson**, **@TCNetwork** et **@DougAMacgregor**. Le lecteur règle le nombre de jours par colonne, compare les périodes et vérifie les calculs publication par publication.
 
+Le jeu de données couvre une période de 180 jours. Les dates de début et de fin incluses sélectionnent la période affichée ; les cartes, comparaisons et exports suivent cette sélection. Le bouton **Toute la période** rétablit l’intervalle disponible.
+
+Le zoom vertical ajuste l’axe aux valeurs, le fait partir de zéro ou utilise des bornes personnalisées. Un axe tronqué et les valeurs hors des bornes sont signalés ; les chiffres et les exports ne sont pas modifiés par le zoom.
+
 ## GitHub Pages
 
 1. Envoyer le projet sur la branche `master` ou `main` du dépôt.

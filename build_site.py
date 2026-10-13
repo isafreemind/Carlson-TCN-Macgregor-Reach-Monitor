@@ -13,6 +13,9 @@ def build(source):
     payload['coverage'] = {account: {'complete': info['complete']} for account, info in source.get('coverage', {}).items()}
     payload['posts'] = [{field: post.get(field) for field in FIELDS} for post in source['posts']]
     posts = payload['posts']
+    for account, info in payload['coverage'].items():
+        dates = [post['date'] for post in posts if post['account'] == account]
+        info['first_available'] = min(dates)[:10] if dates else None
     if len({p['id'] for p in posts}) != len(posts):
         raise ValueError('Duplicate publication IDs')
     for post in posts:
