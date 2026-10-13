@@ -1,0 +1,34 @@
+# Generated website and exports (rebuilt from the archived data)
+/_site/
+/index.html
+/statistiques-30-jours.html
+/data/posts.csv
+/graphique-*.svg
+/statistiques-apercu.png
+
+# Private local tools and working data
+/.private/
+/collect_stats.py
+/data/raw/
+/tucker-first.json
+
+# Browser verification artifacts
+/.playwright-mcp/
+
+# Local Python environment and caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local editor / operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local configuration
+.env
+.env.*
+!.env.example
